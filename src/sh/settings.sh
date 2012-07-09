@@ -1,0 +1,5 @@
+
+TARGETDIR=${TARGETDIR:-"ParteiProgramme"}
+BASEDIR="${SKRIPTS}/../.."
+WORKDIR=${BASEDIR}/work
+INPUTDIR=${BASEDIR}/codes

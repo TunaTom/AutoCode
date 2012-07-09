@@ -1,0 +1,6 @@
+3300 Ältere Unternehmen|Belegschaften älter|alters- und altengerechte Arbeitsbedingungen|Altersteilzeit|Teilrente|Älterer Arbeitsmarkt 
+3400 Ältere|ältere Menschen |ältere Bürger|ältere Gründer|nach der Erwerbsphase|Altersarmut|Geriatrie|Alte|Seniorenbeiräte|altersgerechtes Wohnen|ältere Generation|Seniorensport|Leistung der Generationen|vom Alter|Alzheimergesellschaften  
+2500 Qualifizierung Arbeitnehmer|Weiterbildung|berufliche Qualifizierung
+2300 Freistellungsanspruch|Pflegezeit|Vereinbarkeit Pflege Beruf
+2200 Elterngeld|Partnermonate|Vereinbarkeit Familie Beruf
+1300 Bildungssystem|Bildung|Schule
