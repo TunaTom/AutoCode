@@ -33,8 +33,10 @@
 
 ## Place each sentence in a single line - empty lines are removed.
 
+## Remove all linebreaks (join all lines into one). This is for inputs where single sentences span multiple lines
 ## Find all .?!; , which are not preceded by a number and that are not at the end of the line.
 ## Append a linebreak.
+## Replace multiple consecutive whitespaces with a single space.
 ## That way, sentences are placed in a line of their own, but p.e. "der 22. September" is not.
 ## Afterwards ignore lines that contain only whitespace
-sed -e 's/\([^0-9][\.?!;]\)\w*[^$]/\1\n/g' ${1} | grep -v "^\w*$"
+tr '\r\n' ' ' | sed -e 's/\([^0-9][\.?!;]\)\w*[^$]/\1\n/g' -e 's/[ \t]\+/ /g' ${1} | grep -v "^\w*$"
