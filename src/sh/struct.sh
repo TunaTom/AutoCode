@@ -39,4 +39,4 @@
 ## Replace multiple consecutive whitespaces with a single space.
 ## That way, sentences are placed in a line of their own, but p.e. "der 22. September" is not.
 ## Afterwards ignore lines that contain only whitespace
-tr '\r\n' ' ' | sed -e 's/\([^0-9][\.?!;]\)\w*[^$]/\1\n/g' -e 's/[ \t]\+/ /g' ${1} | grep -v "^\w*$"
+cat ${1} | tr '\r\n' ' ' | sed -e 's/\([^0-9][\.?!;]\)\w*[^$]/\1\n/g' -e 's/[ \t]\+/ /g' | grep -v "^\w*$"

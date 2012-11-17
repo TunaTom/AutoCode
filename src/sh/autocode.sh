@@ -72,6 +72,7 @@ for INPUT_FILE in ${TARGETDIR}/*.txt; do
 	STRUCT_FILE=${WORKDIR}/01_${BASENAME}_struct.txt
 	
 	${STRUCT} ${INPUT_FILE} > ${STRUCT_FILE}
+	echo "  struct file done" >&2
 	NEGATIVE_EXPRESSION=`${CAT_AS_OR} ${NEGATIVE_FILE}`
 	DEFAULT_CODE=`cat ${DEFAULT_CODE_FILE}`
 	
@@ -80,5 +81,6 @@ for INPUT_FILE in ${TARGETDIR}/*.txt; do
 		exec 1>${AUTOCODE_FILE}
 	fi
 
+	echo "  correlating codes" >&2
 	correlateCodes ${STRUCT_FILE} ${POSITIVE_FILE} "${NEGATIVE_EXPRESSION}" ${DEFAULT_CODE}
 done
